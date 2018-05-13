@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<application>
+	
+    <display-name>WROX Internet Banking Application</display-name>
+
+    <module>
+        <web>
+            <web-uri>bank.war</web-uri>
+            <context-root>/bank</context-root>
+        </web>
+    </module>
+
+    <module>
+        <ejb>bank.jar</ejb>
+    </module>
+
+</application>
+

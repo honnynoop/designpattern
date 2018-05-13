@@ -1,0 +1,14 @@
+https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern
+
+https://dzone.com/articles/gof-design-patterns-using-java-part-1
+https://dzone.com/refcardz/design-patterns?chapter=1
+
+
+영진일본
+http://www.techscore.com/tech/DesignPattern/Prototype.html/
+
+
+https://en.wikipedia.org/wiki/Factory_method_pattern
+
+intent
+https://sourcemaking.com/design_patterns

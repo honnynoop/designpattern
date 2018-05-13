@@ -1,0 +1,1 @@
+start java CustomerManagement.Server

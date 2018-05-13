@@ -1,0 +1,1 @@
+java -classpath %j2ee_home%\lib\j2ee.jar;CityBreakClient.jar;. -Djms.properties=%j2ee_home%\config\jms_client.properties clients.Step5 %1 %2 %3 %4

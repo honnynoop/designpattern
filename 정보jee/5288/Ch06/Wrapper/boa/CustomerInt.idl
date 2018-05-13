@@ -1,0 +1,63 @@
+module CustomerManagement {
+
+   interface Customer {
+
+      enum statusType {normal, silver, gold};
+      
+      enum typeOfAccounts {subscribtion, prepaid};
+      
+      struct dateType {
+         short date;
+         short month;
+         short year;
+      };
+
+      exception customerNotFound {
+         string reason;
+         short errorCode;
+      };
+      
+      exception customerNotUpdated {
+         string reason;
+         short errorCode;
+      };
+      
+      exception accountNotAdded {
+         string reason;
+         short errorCode;
+      };
+      
+      exception accountNotDeleted  {
+         string reason;
+         short errorCode;
+      };
+   
+      void getCustomer ( in long customerId, 
+                            out wstring firstName, 
+                            out wstring lastName,
+                            out wstring address,
+                            out short numberOfPhoneAccounts,
+                            out statusType status)
+           raises (customerNotFound);
+                            
+      long setCustomer ( in wstring firstName, 
+                            in wstring lastName,
+                            in wstring address,
+                            in short numberOfPhoneAccounts,
+                            in statusType status)
+           raises (customerNotUpdated);
+                            
+      void newAccount ( in wstring phoneNumber,
+                           in wstring startDate,
+                           in typeOfAccounts typeOfAccount)
+           raises (accountNotAdded);
+
+      void deleteAccount ( in wstring phoneNumber)
+           raises (accountNotDeleted);
+      
+   };
+};
+
+   
+                           
+                           

@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Admin Hotel Page</title>
+  </head>
+
+  <body>
+    <h3><center>Admin Hotel Page</center></h3>
+    <form action="AdminHotelServlet" method="GET" target="result">
+    <p> </p>
+
+    <div align="center"><center><table border="1" cellspacing="1" width="425" bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">
+      <tr>
+        <td width="125"><font size="2" face="Arial">Action Type</font></td>
+        <td width="300"><select name="action" size="1">
+          <option value="create">Create</option>
+          <option value="find">Find</option>
+          <option value="remove">Remove</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td width="125"><font size="2" face="Arial">Hotel Id</font></td>
+        <td width="300"><div align="left"><p>
+           <input type="text" name="id" value="type hotel id here" size="20">
+        </td>
+      </tr>
+      <tr>
+        <td width="125"><font size="2" face="Arial">Hotel Name</font></td>
+        <td width="300"><div align="left"><p>
+          <input type="text" name="name" value="type hotel name here" size="20">
+        </td>
+      </tr>
+      <tr>
+        <td width="125"><font size="2" face="Arial">Hotel Purpose</font></td>
+        <td width="300"><select name="purpose" size="1">
+          <option value="Business">Business</option>
+          <option value="Cultural excursion">Cultural excursion</option>
+          <option value="Skiing Holiday">Skiing Holiday</option>
+          <option value="Beach Holiday">Beach Holiday</option>
+          <option value="Business & Culture">Business & Culture</option>
+          <option value="Beach & Culture">Beach & Culture</option>
+          <option value="Business & Beach">Business & Beach</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td width="125"><font size="2" face="Arial">Type of Hotel</font></td>
+        <td width="300"><div align="left"><p><select name="type" size="1">
+	      <option value="5 Star">Delux / 5 Star</option>
+           <option value="4 Star">4 Star</option>
+          <option value="3 Star">3 Star</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td width="125"><font size="2" face="Arial">Region or Town</font></td>
+        <td width="300"><select name="regionOrTown" size="1">
+          <option value="Ankara">Ankara</option>
+          <option value="Istanbul">Istanbul</option>
+          <option value="Cappadocia">Cappadocia</option>
+          <option value="Bodrum">Bodrum</option>
+          <option value="Erciyes">Erciyes (ski centre)</option>
+          <option value="Side">Side</option>
+          <option value="Palandoken">Palandoken (ski centre)</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td width="125"><font size="2" face="Arial">Chain or Agent</font></td>
+        <td width="300"><select name="chain" size="1">
+          <option value="Gold Trail">Gold Trail</option>
+          <option value="Thomson">Thomson</option>
+          <option value="LunnPoly">LunnPoly</option>
+          <option value="First Choice">First Choice</option>
+          <option value="Jmc">Jmc</option>
+          <option value="Ottoman Hotels">Ottoman Hotels</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td width="425" align="center" colspan="2"><small><font face="Arial"><strong>Facilities:</strong><br>
+        <input type="checkbox" name="swimmingPool" Value="1"> Swimming Pool</font>,<input type="checkbox" name="gym" Value="1"><font face="Arial">Gym</font>, <input type="checkbox" name="conferenceRooms" Value="1"><font face="Arial">Conference Rooms.</font></small></td>
+      </tr> 
+      <tr>
+        <td width="125" align="center"><input type="submit" value="Submit"></td>
+      </tr>
+    </table>
+  </center></div>
+  </form>
+
+  </body>
+</html>

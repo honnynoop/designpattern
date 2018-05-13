@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE j2ee-ri-specific-information PUBLIC '-//Sun Microsystems Inc.//DTD J2EE Reference Implementation 1.3//EN' 'http://localhost:8000/sun-j2ee-ri_1_3.dtd'>
+
+<j2ee-ri-specific-information>
+  <rolemapping />
+  <web>
+    <module-name>Hotel-Web.war</module-name>
+    <context-root>hotel</context-root>
+  </web>
+  <enterprise-beans>
+    <module-name>Hotel-EJB.jar</module-name>
+    <unique-id>0</unique-id>
+    <ejb>
+      <ejb-name>Hotel</ejb-name>
+      <jndi-name>Hotel</jndi-name>
+      <resource-ref>
+        <res-ref-name>jdbc/hotelPool</res-ref-name>
+        <jndi-name>jdbc/Cloudscape</jndi-name>
+      </resource-ref>
+      <gen-classes />
+    </ejb>
+  </enterprise-beans>
+</j2ee-ri-specific-information>
+

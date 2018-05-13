@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ejb-jar PUBLIC '-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN' 'http://java.sun.com/dtd/ejb-jar_2_0.dtd'>
+
+<ejb-jar>
+  <display-name>Title</display-name>
+  <enterprise-beans>
+    <session>
+      <display-name>TitleDAOBean</display-name>
+      <ejb-name>TitleDAOBean</ejb-name>
+      <home>session.title.TitleDAOHome</home>
+      <remote>session.title.TitleDAO</remote>
+      <ejb-class>session.title.TitleDAOBean</ejb-class>
+      <session-type>Stateful</session-type>
+      <transaction-type>Bean</transaction-type>
+      <security-identity>
+        <description></description>
+        <use-caller-identity></use-caller-identity>
+      </security-identity>
+    </session>
+  </enterprise-beans>
+  <assembly-descriptor>
+    <method-permission>
+      <unchecked />
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Home</method-intf>
+        <method-name>remove</method-name>
+        <method-params>
+          <method-param>java.lang.Object</method-param>
+        </method-params>
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Remote</method-intf>
+        <method-name>update</method-name>
+        <method-params>
+          <method-param>valueobject.ValueObject</method-param>
+        </method-params>
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Remote</method-intf>
+        <method-name>createValueObject</method-name>
+        <method-params />
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Remote</method-intf>
+        <method-name>findByPrimaryKey</method-name>
+        <method-params>
+          <method-param>java.lang.String</method-param>
+        </method-params>
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Remote</method-intf>
+        <method-name>getHandle</method-name>
+        <method-params />
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Home</method-intf>
+        <method-name>remove</method-name>
+        <method-params>
+          <method-param>javax.ejb.Handle</method-param>
+        </method-params>
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Home</method-intf>
+        <method-name>getHomeHandle</method-name>
+        <method-params />
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Remote</method-intf>
+        <method-name>getPrimaryKey</method-name>
+        <method-params />
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Remote</method-intf>
+        <method-name>insert</method-name>
+        <method-params>
+          <method-param>valueobject.ValueObject</method-param>
+        </method-params>
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Remote</method-intf>
+        <method-name>delete</method-name>
+        <method-params>
+          <method-param>valueobject.ValueObject</method-param>
+        </method-params>
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Remote</method-intf>
+        <method-name>remove</method-name>
+        <method-params />
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Home</method-intf>
+        <method-name>getEJBMetaData</method-name>
+        <method-params />
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Home</method-intf>
+        <method-name>create</method-name>
+        <method-params />
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Remote</method-intf>
+        <method-name>isIdentical</method-name>
+        <method-params>
+          <method-param>javax.ejb.EJBObject</method-param>
+        </method-params>
+      </method>
+      <method>
+        <ejb-name>TitleDAOBean</ejb-name>
+        <method-intf>Remote</method-intf>
+        <method-name>getEJBHome</method-name>
+        <method-params />
+      </method>
+    </method-permission>
+  </assembly-descriptor>
+</ejb-jar>
+
