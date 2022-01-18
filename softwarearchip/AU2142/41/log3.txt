@@ -1,2 +1,0 @@
-
- Design Patterns are really useful

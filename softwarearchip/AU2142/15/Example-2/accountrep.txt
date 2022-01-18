@@ -1,4 +1,0 @@
-Computer1,FullAccess
-Computer2Folder2,Read
-Server2MainFolder,Read
-FieldComputer,ReadWriter
