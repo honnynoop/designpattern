@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<jboss-web>
-    <!-- Use the JAAS Database Security Module -->
-    <security-domain>java:/jaas/dbLogin</security-domain>
-</jboss-web>
-

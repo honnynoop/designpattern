@@ -1,4 +1,0 @@
-rmic -iiop -keep MobilePhoneEvaluationImpl
-
-
-
